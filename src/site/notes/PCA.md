@@ -1,4 +1,4 @@
 ---
-{"dg-publish":true,"permalink":"/PCA/"}
+{"dg-publish":true,"permalink":"/PCA/","tags":["gardenEntry"]}
 ---
 
