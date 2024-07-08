@@ -23,7 +23,7 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 - **E. Replace the platform's relational database systems with a NoSQL database**
 - #### *將平台的關係型數據庫系統替換為NoSQL數據庫*
 
-# Remark
+# Notes
 增加穩定度方式：容器化部署、負載平衡
 
 
@@ -51,7 +51,7 @@ Which two steps should you take? (Choose two.)**
 - **F. Store all state in Google Cloud Storage, snapshot the persistent disks, and terminate the VM**
 - #### *將所有狀態儲存在 Google Cloud Storage 中，對永久性磁碟進行快照，並終止 VM*
 
-# Remark
+# Notes
 [gcloud compute instances set-disk-auto-delete  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete#--auto-delete)
 [将 Cloud Billing 数据导出到 BigQuery  |  Google Cloud](https://cloud.google.com/billing/docs/how-to/export-data-bigquery?hl=zh-cn)
 [[assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg|Open: PCA-image-20240708182619467.png]]
@@ -80,7 +80,7 @@ Which database type should you use?**
 - **D. Blobstore**
 - #### *二進位大物件儲存*
 
-# Remark
+# Notes
 [[assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg|Open: PCA-image-20240708173116708.png]]
 ![assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg](/img/user/assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg)
 
@@ -106,7 +106,7 @@ What should you do?**
 - **D. Create a tag on each instance with the name of the load balancer. Configure a firewall rule with the name of the load balancer as the source and the instance tag as the destination.**
 - #### *在每個實例上創建一個帶有負載均衡器名稱的標籤。配置防火牆規則，將負載均衡器的名稱作為源，將實例標籤作為目標*
 
-# Remark
+# Notes
 [后端服务概览  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/backend-service?hl=zh-cn)
 防火牆與健康檢查
 [[assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg|Open: PCA-image-20240708153509944.png]]
@@ -138,7 +138,7 @@ What should you do to fix the script?**
 - **D. Install the bq component for gcloud with the command gcloud components install bq.**
 - #### *使用命令 gcloud components install bq 安裝 gcloud 的 bq 元件*
 
-# Remark
+# Notes
 [为 API 请求授权  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/authorization?hl=zh-cn#client-libraries)
 服務帳戶建立
 [[assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg|Open: PCA-image-20240708152529305.png]]
