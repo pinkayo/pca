@@ -27,7 +27,7 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 **Question #7**
 **To reduce costs, the Director of Engineering has required all developers to move their development infrastructure resources from on-premises virtual machines (VMs) to Google Cloud Platform. These resources go through multiple start/stop events during the day and require state to persist. You have been asked to design the process of running a development environment in Google Cloud while providing cost visibility to the finance department. 
 Which two steps should you take? (Choose two.)**
-- **A. Use the - -no-auto-delete flag on all persistent disks and stop the VM
+- **A. Use the - -no-auto-delete flag on all persistent disks and stop the VM**
 - **B. Use the - -auto-delete flag on all persistent disks and terminate the VM**
 - **C. Apply VM CPU utilization label and include it in the BigQuery billing export**
 - **D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted**
