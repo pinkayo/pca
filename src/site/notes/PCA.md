@@ -54,7 +54,6 @@ Which two steps should you take? (Choose two.)**
 ![assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg](/img/user/assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg)
 
 
-
 ---
 **Question #8**
 **Your company wants to track whether someone is present in a meeting room reserved for a scheduled meeting. There are 1000 meeting rooms across 5 offices on 3 continents. Each room is equipped with a motion sensor that reports its status every second. The data from the motion detector includes only a sensor ID and several different discrete items of information. Analysts will use this data, together with information about account owners and office locations.  
@@ -144,14 +143,12 @@ Which approach should you use?**
 - #### *C. 使用預設保留策略為所有專案配置 Stackdriver Monitoring*
 - #### *D. 為所有專案配置 Stackdriver Monitoring，並匯出至 Google Cloud Storage*
 
-
 # Notes
 [将日志路由到支持的目的地  |  Cloud Logging  |  Google Cloud](https://cloud.google.com/logging/docs/export/configure_export_v2?hl=zh-cn)
 
 匯出設定方式：
 [[assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg|Open: PCA-image-20240710163111852.png]]
 ![assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg](/img/user/assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg)
-
 
 
 ---
@@ -165,15 +162,15 @@ Which networking approach should you use?**
 - **C. A NAT and TLS translation gateway installed on-premises**
 - **D. A Google Compute Engine instance with a VPN server installed connected to the data center network**
 
-#### *貴公司決定在 Google Cloud Platform 上建立其本機使用者身分驗證 PostgreSQL 資料庫的備份副本。資料庫4 TB，大更新頻繁。複製需要專用位址空間通訊。*
+#### *貴公司決定在 Google Cloud Platform 上建立其本機使用者身分驗證 PostgreSQL 資料庫的備份副本。資料庫4 TB，大更新頻繁。複製需要專用位址空間通訊。您應該使用哪種網路方法？*
 
 - #### *A. Google Cloud 專用互連*
 - #### *B. 連接到資料中心網路的 Google Cloud VPN*
 - #### *C. 本機安裝的 NAT 和 TLS 轉換網關*
 - #### *D. 安裝連接到資料中心網路的 VPN 伺服器的 Google Compute Engine 實例*
 
-
 # Notes
+[专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
 
 
 ---
@@ -186,16 +183,15 @@ What should you do?**
 - #### **C. Use cloud functions to transfer log entries to Google Cloud SQL and use ACLs and views to limit an auditor's view**
 - #### **D. Enable Google Cloud Storage (GCS) log export to audit logs into a GCS bucket and delegate access to the bucket**
 
-#### *審核員每 12 個月造訪一次您的團隊，並要求審核過去 12 個月內的所有 Google Cloud Identity and Access Management (Cloud IAM) 政策變更。您想要簡化並加快分析和審核流程。*
+#### *審核員每 12 個月造訪一次您的團隊，並要求審核過去 12 個月內的所有 Google Cloud Identity and Access Management (Cloud IAM) 政策變更。您想要簡化並加快分析和審核流程。你該做什麼？*
 
 - #### *A. 建立自訂 Google Stackdriver 警報並將其傳送給審核員*
 - #### *B. 啟用日誌記錄匯出到 Google BigQuery 並使用 ACL 和視圖來確定與審核員共享的資料的範圍*
 - #### *C. 使用雲端函數將日誌條目傳輸到 Google Cloud SQL，並使用 ACL 和檢視來限制審核員的檢視*
 - #### *D. 啟用 Google Cloud Storage (GCS) 日誌匯出，以審核日誌到 GCS 儲存桶並委派對該儲存桶的存取權限*
 
-
 # Notes
-
+[负有审核相关工作职责的 IAM 角色  |  IAM 文档  |  Google Cloud](https://cloud.google.com/iam/docs/job-functions/auditing?hl=zh-cn#scenario_external_auditors)
 
 ---
 **Question #29**
@@ -214,8 +210,8 @@ Where should you store the credentials?**
 - #### *C. 在秘密管理系統中*
 - #### *D. 在透過 ACL 限制存取的設定檔中揭示解決方案*
 
-
 # Notes
+[Secret Manager 概览  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=zh-cn)
 
 
 ---
@@ -231,7 +227,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **E. Cloud Deployment Manager can be used to permanently delete cloud resources**
 - **F. Cloud Deployment Manager only supports automation of Google Cloud resources**
 
-#### *一位首席工程師編寫了一個自訂工具，用於在舊資料中心部署虛擬機器。他希望將自訂工具遷移到新的雲端環境。（選兩個。）*
+#### *一位首席工程師編寫了一個自訂工具，用於在舊資料中心部署虛擬機器。他希望將自訂工具遷移到新的雲端環境。您想要倡導採用 Google Cloud Deployment Manager並遷移到 Cloud Deployment Manager 的兩個業務風險是什麼？（選兩項。）*
 
 - #### *A. Cloud Deployment Manager 使用 Python*
 - #### *B. Cloud Deployment Manager API 將來可能會被棄用*
@@ -239,7 +235,6 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *D. Cloud Deployment Manager 需要 Google API 服務帳戶才能執行*
 - #### *E. Cloud Deployment Manager 可用於永久刪除雲端資源*
 - #### *F. Cloud Deployment Manager 僅支援 Google Cloud 資源的自動化Reveal Solution*
-
 
 # Notes
 
