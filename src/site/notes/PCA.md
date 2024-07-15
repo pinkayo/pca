@@ -153,8 +153,7 @@ Which approach should you use?**
 
 ---
 **Question #27**
-**Your company has decided to build a backup replica of their on-premises user authentication PostgreSQL database on Google Cloud Platform. The database is 4  
-TB, and large updates are frequent. Replication requires private address space communication.  
+**Your company has decided to build a backup replica of their on-premises user authentication PostgreSQL database on Google Cloud Platform. The database is 4 TB, and large updates are frequent. Replication requires private address space communication.  
 Which networking approach should you use?**
 
 - **A. Google Cloud Dedicated Interconnect**
