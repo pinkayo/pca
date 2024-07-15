@@ -162,16 +162,23 @@ Which networking approach should you use?**
 - **C. A NAT and TLS translation gateway installed on-premises**
 - **D. A Google Compute Engine instance with a VPN server installed connected to the data center network**
 
-#### *貴公司決定在 Google Cloud Platform 上建立其本機使用者身分驗證 PostgreSQL 資料庫的備份副本。資料庫4 TB，大更新頻繁。複製需要專用位址空間通訊。您應該使用哪種網路方法？*
+#### *貴公司決定在 Google Cloud Platform 上建立其本機使用者身分驗證 PostgreSQL 資料庫的備份副本。資料庫4 TB更新頻繁。副本需要透過私人位址空間通訊。您應該使用哪種網路方法？*
 
 - #### *A. Google Cloud 專用互連*
 - #### *B. 連接到資料中心網路的 Google Cloud VPN*
 - #### *C. 本機安裝的 NAT 和 TLS 轉換網關*
-- #### *D. 安裝連接到資料中心網路的 VPN 伺服器的 Google Compute Engine 實例*
+- #### *D. Google Compute Engine 實例安裝VPN 伺服器連線到資料中心網路*
 
 # Notes
 [专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
+[Cloud VPN 概览  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview?hl=zh-cn)
 
+| 特點   | VPN                                   | 專用互聯                                    |
+| ---- | ------------------------------------- | --------------------------------------- |
+| 頻寬   | 通常在幾百Mbps到1Gbps之間，受網絡狀況和配置影響。         | 提供從10Gbps到100Gbps不等的高頻寬支持，傳輸速度遠超過VPN。   |
+| 成本   | 相對較低的成本，適合預算有限或對傳輸速度要求不高的情況。522.56(美) | 較高的成本，需要較高的初次費用和運營成本，但提供高性能和穩定性。8288(美) |
+| 適用場景 | 小規模數據傳輸、臨時性連接需求。                      | 大規模數據傳輸、頻繁傳輸和對傳輸速度、穩定性有高要求的業務。          |
+| 選擇情況 | 預算有限且對傳輸時間要求不高的情況下。                   | 數據傳輸時間和速度對業務非常關鍵，或者需要頻繁進行大規模數據傳輸。       |
 
 ---
 **Question #28**
@@ -192,6 +199,16 @@ What should you do?**
 
 # Notes
 [负有审核相关工作职责的 IAM 角色  |  IAM 文档  |  Google Cloud](https://cloud.google.com/iam/docs/job-functions/auditing?hl=zh-cn#scenario_external_auditors)
+[[assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg|Open: PCA-image-20240715165522502.png]]
+![assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg](/img/user/assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg)
+[[assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg|Open: PCA-image-20240715165532896.png]]
+![assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg](/img/user/assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg)
+[[assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg|Open: PCA-image-20240715172936030.png]]
+![assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg](/img/user/assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg)
+[[assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg|Open: PCA-image-20240715173107356.png]]
+![assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg](/img/user/assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg)
+[[assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg|Open: PCA-image-20240715173117999.png]]
+![assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg](/img/user/assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg)
 
 ---
 **Question #29**
@@ -208,11 +225,12 @@ Where should you store the credentials?**
 - #### *A. 原始碼中*
 - #### *B. 在環境變數中*
 - #### *C. 在秘密管理系統中*
-- #### *D. 在透過 ACL 限制存取的設定檔中揭示解決方案*
+- #### *D. 在透過 ACL 限制存取的設定檔中*
 
 # Notes
 [Secret Manager 概览  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=zh-cn)
-
+[[assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg|Open: PCA-image-20240715155416901.png]]
+![assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg](/img/user/assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg)
 
 ---
 **Question #30**
@@ -227,16 +245,17 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **E. Cloud Deployment Manager can be used to permanently delete cloud resources**
 - **F. Cloud Deployment Manager only supports automation of Google Cloud resources**
 
-#### *一位首席工程師編寫了一個自訂工具，用於在舊資料中心部署虛擬機器。他希望將自訂工具遷移到新的雲端環境。您想要倡導採用 Google Cloud Deployment Manager並遷移到 Cloud Deployment Manager 的兩個業務風險是什麼？（選兩項。）*
+#### *一位首席工程師編寫了一個自訂工具，用在傳統資料中心部署虛擬機器。他希望將自訂工具遷移到新的雲端環境。您想要倡導採用 Google Cloud Deployment Manager並遷移到 Cloud Deployment Manager 的兩個業務風險是什麼？（選兩項。）*
 
 - #### *A. Cloud Deployment Manager 使用 Python*
 - #### *B. Cloud Deployment Manager API 將來可能會被棄用*
 - #### *C. 公司工程師對Cloud Deployment Manager比較陌生*
 - #### *D. Cloud Deployment Manager 需要 Google API 服務帳戶才能執行*
 - #### *E. Cloud Deployment Manager 可用於永久刪除雲端資源*
-- #### *F. Cloud Deployment Manager 僅支援 Google Cloud 資源的自動化Reveal Solution*
+- #### *F. Cloud Deployment Manager 僅支援 Google Cloud 資源的自動化*
 
 # Notes
-
-
----
+[Google Cloud Deployment Manager 文档  |  Cloud Deployment Manager Documentation](https://cloud.google.com/deployment-manager/docs?hl=zh-cn)
+[[assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg|Open: PCA-image-20240715145659726.png]]
+![assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg](/img/user/assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg)
+![assets/PCA/e98461e39e24ed0772bdbff6aaac5268_MD5.jpeg](/img/user/assets/PCA/e98461e39e24ed0772bdbff6aaac5268_MD5.jpeg)
