@@ -171,6 +171,8 @@ Which networking approach should you use?**
 # Notes
 [专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
 [Cloud VPN 概览  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview?hl=zh-cn)
+[[assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg|Open: PCA-image-20240716104810403.png]]
+![assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg](/img/user/assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg)
 
 | 特點   | VPN                                   | 專用互聯                                    |
 | ---- | ------------------------------------- | --------------------------------------- |
