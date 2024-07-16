@@ -211,13 +211,6 @@ A. Google Cloud Dedicated Interconnect<br>
 [[assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg|Open: PCA-image-20240716104810403.png]]
 ![assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg](/img/user/assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg)
 
-| 特點   | VPN                                   | 專用互聯                                    |
-| ---- | ------------------------------------- | --------------------------------------- |
-| 頻寬   | 通常在幾百Mbps到1Gbps之間，受網絡狀況和配置影響。         | 提供從10Gbps到100Gbps不等的高頻寬支持，傳輸速度遠超過VPN。   |
-| 成本   | 相對較低的成本，適合預算有限或對傳輸速度要求不高的情況。522.56(美) | 較高的成本，需要較高的初次費用和運營成本，但提供高性能和穩定性。8288(美) |
-| 適用場景 | 小規模數據傳輸、臨時性連接需求。                      | 大規模數據傳輸、頻繁傳輸和對傳輸速度、穩定性有高要求的業務。          |
-| 選擇情況 | 預算有限且對傳輸時間要求不高的情況下。                   | 數據傳輸時間和速度對業務非常關鍵，或者需要頻繁進行大規模數據傳輸。       |
-
 ---
 **Question #28**
 **Auditors visit your teams every 12 months and ask to review all the Google Cloud Identity and Access Management (Cloud IAM) policy changes in the previous 12 months. You want to streamline and expedite the analysis and audit process.  
