@@ -25,7 +25,7 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 A. Introduce a green-blue deployment model<br>
 C. Fragment the monolithic platform into microservices<br>
 </details>
-
+---
 
 # Notes
 增加穩定度方式：容器化部署、負載平衡
