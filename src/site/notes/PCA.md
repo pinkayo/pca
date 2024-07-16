@@ -49,6 +49,12 @@ Which two steps should you take? (Choose two.)**
 - #### *E. 將所有狀態儲存到本機 SSD、對永久磁碟進行快照並終止 VM*
 - #### *F. 將所有狀態儲存在 Google Cloud Storage 中，對永久性磁碟進行快照，並終止 VM*
 
+<details>
+<summary>答案</summary>
+A. Use the - -no-auto-delete flag on all persistent disks and stop the VM<br>
+D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted<br>
+</details>
+
 # Notes
 [gcloud compute instances set-disk-auto-delete  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete#--auto-delete)
 [将 Cloud Billing 数据导出到 BigQuery  |  Google Cloud](https://cloud.google.com/billing/docs/how-to/export-data-bigquery?hl=zh-cn)
@@ -57,12 +63,6 @@ Which two steps should you take? (Choose two.)**
 匯出
 [[assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg|Open: PCA-image-20240708184058884.png]]
 ![assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg](/img/user/assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg)
-
-<details>
-<summary>答案</summary>
-A. Use the - -no-auto-delete flag on all persistent disks and stop the VM<br>
-D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted<br>
-</details>
 
 ---
 **Question #8**
@@ -84,6 +84,7 @@ Which database type should you use?**
 <summary>答案</summary>
 B. NoSQL<br>
 </details>
+
 # Notes
 [[assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg|Open: PCA-image-20240708173116708.png]]
 ![assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg](/img/user/assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg)
@@ -112,6 +113,7 @@ What should you do?**
 <summary>答案</summary>
 C. Ensure that a firewall rule exists to allow load balancer health checks to reach the instances in the instance group<br>
 </details>
+
 # Notes
 [后端服务概览  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/backend-service?hl=zh-cn)
 防火牆與健康檢查
@@ -142,6 +144,7 @@ What should you do to fix the script?**
 <summary>答案</summary>
 C. Create a new service account with BigQuery access and execute your script with that user<br>
 </details>
+
 # Notes
 [为 API 请求授权  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/authorization?hl=zh-cn#client-libraries)
 服務帳戶建立
@@ -169,6 +172,7 @@ Which approach should you use?**
 <summary>答案</summary>
 D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage<br>
 </details>
+
 # Notes
 [将日志路由到支持的目的地  |  Cloud Logging  |  Google Cloud](https://cloud.google.com/logging/docs/export/configure_export_v2?hl=zh-cn)
 預設保留策略：
@@ -200,6 +204,7 @@ Which networking approach should you use?**
 <summary>答案</summary>
 A. Google Cloud Dedicated Interconnect<br>
 </details>
+
 # Notes
 [专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
 [Cloud VPN 概览  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview?hl=zh-cn)
@@ -234,6 +239,7 @@ What should you do?**
 <summary>答案</summary>
 B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor<br>
 </details>
+
 # Notes
 [负有审核相关工作职责的 IAM 角色  |  IAM 文档  |  Google Cloud](https://cloud.google.com/iam/docs/job-functions/auditing?hl=zh-cn#scenario_external_auditors)
 [[assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg|Open: PCA-image-20240715165522502.png]]
@@ -268,6 +274,7 @@ Where should you store the credentials?**
 <summary>答案</summary>
 C. In a secret management system<br>
 </details>
+
 # Notes
 [Secret Manager 概览  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=zh-cn)
 [[assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg|Open: PCA-image-20240715155416901.png]]
@@ -300,6 +307,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 C. Cloud Deployment Manager is unfamiliar to the company's engineers<br>
 F. Cloud Deployment Manager only supports automation of Google Cloud resources<br>
 </details>
+
 # Notes
 [Google Cloud Deployment Manager 文档  |  Cloud Deployment Manager Documentation](https://cloud.google.com/deployment-manager/docs?hl=zh-cn)
 [[assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg|Open: PCA-image-20240715145659726.png]]
