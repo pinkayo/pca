@@ -19,14 +19,16 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 - #### *C. 將單體平台分解為微服務*
 - #### *D. 減少平台對關係型數據庫系統的依賴*
 - #### *E. 將平台的關係型數據庫系統替換為NoSQL數據庫*
-# Notes
-增加穩定度方式：容器化部署、負載平衡
 
 <details>
 <summary>答案</summary> 
 A. Introduce a green-blue deployment model<br>
 C. Fragment the monolithic platform into microservices<br>
 </details>
+---
+# Notes
+增加穩定度方式：容器化部署、負載平衡
+
 ---
 **Question #7**
 **To reduce costs, the Director of Engineering has required all developers to move their development infrastructure resources from on-premises virtual machines (VMs) to Google Cloud Platform. These resources go through multiple start/stop events during the day and require state to persist. You have been asked to design the process of running a development environment in Google Cloud while providing cost visibility to the finance department. 
