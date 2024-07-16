@@ -19,16 +19,14 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 - #### *C. 將單體平台分解為微服務*
 - #### *D. 減少平台對關係型數據庫系統的依賴*
 - #### *E. 將平台的關係型數據庫系統替換為NoSQL數據庫*
+# Notes
+增加穩定度方式：容器化部署、負載平衡
 
 <details>
 <summary>答案</summary> 
 A. Introduce a green-blue deployment model<br>
 C. Fragment the monolithic platform into microservices<br>
 </details>
-# Notes
-增加穩定度方式：容器化部署、負載平衡
-
-
 ---
 **Question #7**
 **To reduce costs, the Director of Engineering has required all developers to move their development infrastructure resources from on-premises virtual machines (VMs) to Google Cloud Platform. These resources go through multiple start/stop events during the day and require state to persist. You have been asked to design the process of running a development environment in Google Cloud while providing cost visibility to the finance department. 
@@ -49,11 +47,6 @@ Which two steps should you take? (Choose two.)**
 - #### *E. 將所有狀態儲存到本機 SSD、對永久磁碟進行快照並終止 VM*
 - #### *F. 將所有狀態儲存在 Google Cloud Storage 中，對永久性磁碟進行快照，並終止 VM*
 
-<details>
-<summary>答案</summary>
-A. Use the - -no-auto-delete flag on all persistent disks and stop the VM<br>
-D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted<br>
-</details>
 # Notes
 [gcloud compute instances set-disk-auto-delete  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete#--auto-delete)
 [将 Cloud Billing 数据导出到 BigQuery  |  Google Cloud](https://cloud.google.com/billing/docs/how-to/export-data-bigquery?hl=zh-cn)
@@ -63,6 +56,11 @@ D. Use Google BigQuery billing export and labels to associate cost to groups M
 [[assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg|Open: PCA-image-20240708184058884.png]]
 ![assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg](/img/user/assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg)
 
+<details>
+<summary>答案</summary>
+A. Use the - -no-auto-delete flag on all persistent disks and stop the VM<br>
+D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted<br>
+</details>
 
 ---
 **Question #8**
