@@ -20,14 +20,12 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 - #### *D. 減少平台對關係型數據庫系統的依賴*
 - #### *E. 將平台的關係型數據庫系統替換為NoSQL數據庫*
 
-<details>
-<summary>答案</summary> 
-A. Introduce a green-blue deployment model<br>
-C. Fragment the monolithic platform into microservices<br>
-</details>
-
-# Notes
-增加穩定度方式：容器化部署、負載平衡
+> [!NOTE]- Answer
+> A. Introduce a green-blue deployment model
+> C. Fragment the monolithic platform into microservices
+> 
+> # Notes
+> 增加穩定度方式：容器化部署、負載平衡
 
 ---
 **Question #7**
@@ -49,20 +47,18 @@ Which two steps should you take? (Choose two.)**
 - #### *E. 將所有狀態儲存到本機 SSD、對永久磁碟進行快照並終止 VM*
 - #### *F. 將所有狀態儲存在 Google Cloud Storage 中，對永久性磁碟進行快照，並終止 VM*
 
-<details>
-<summary>答案</summary>
-A. Use the - -no-auto-delete flag on all persistent disks and stop the VM<br>
-D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted<br>
-</details>
-
-# Notes
-[gcloud compute instances set-disk-auto-delete  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete#--auto-delete)
-[将 Cloud Billing 数据导出到 BigQuery  |  Google Cloud](https://cloud.google.com/billing/docs/how-to/export-data-bigquery?hl=zh-cn)
-[[assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg|Open: PCA-image-20240708182619467.png]]
-![assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg](/img/user/assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg)
-匯出
-[[assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg|Open: PCA-image-20240708184058884.png]]
-![assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg](/img/user/assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg)
+> [!NOTE]- Answer
+> A. Use the - -no-auto-delete flag on all persistent disks and stop the VM
+> D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted
+> 
+> # Notes
+> [gcloud compute instances set-disk-auto-delete  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete#--auto-delete)
+> [将 Cloud Billing 数据导出到 BigQuery  |  Google Cloud](https://cloud.google.com/billing/docs/how-to/export-data-bigquery?hl=zh-cn)
+> [[assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg|Open: PCA-image-20240708182619467.png]]
+> ![assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg](/img/user/assets/PCA/859b86983af5ea6e53247e66d1727c84_MD5.jpeg)
+> 匯出
+> [[assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg|Open: PCA-image-20240708184058884.png]]
+> ![assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg](/img/user/assets/PCA/e51dedaf7827d08a2e0fabafff5bde87_MD5.jpeg)
 
 ---
 **Question #8**
@@ -80,17 +76,14 @@ Which database type should you use?**
 - #### *C. 關聯式資料庫*
 - #### *D. 二進位大物件儲存*
 
-<details>
-<summary>答案</summary>
-B. NoSQL<br>
-</details>
-
-# Notes
-[[assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg|Open: PCA-image-20240708173116708.png]]
-![assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg](/img/user/assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg)
-
-[[assets/PCA/ba052f1a4de9282928dfb69f8565671d_MD5.jpeg|Open: PCA-image-20240708161421503.png]]
-![assets/PCA/ba052f1a4de9282928dfb69f8565671d_MD5.jpeg](/img/user/assets/PCA/ba052f1a4de9282928dfb69f8565671d_MD5.jpeg)
+> [!NOTE]- Answer
+> B. NoSQL
+> 
+> # Notes
+> [[assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg|Open: PCA-image-20240708173116708.png]]
+> ![assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg](/img/user/assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg)
+> [[assets/PCA/ba052f1a4de9282928dfb69f8565671d_MD5.jpeg|Open: PCA-image-20240708161421503.png]]
+> ![assets/PCA/ba052f1a4de9282928dfb69f8565671d_MD5.jpeg](/img/user/assets/PCA/ba052f1a4de9282928dfb69f8565671d_MD5.jpeg)
 
 ---
 **Question #9**
@@ -109,19 +102,16 @@ What should you do?**
 - #### *C. 確保存在防火牆規則，以允許負載均衡器運行健康檢查訪問實例組中的實例*
 - #### *D. 在每個實例上創建一個帶有負載均衡器名稱的標籤。配置防火牆規則，將負載均衡器的名稱作為源，將實例標籤作為目標*
 
-<details>
-<summary>答案</summary>
-C. Ensure that a firewall rule exists to allow load balancer health checks to reach the instances in the instance group<br>
-</details>
-
-# Notes
-[后端服务概览  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/backend-service?hl=zh-cn)
-防火牆與健康檢查
-[[assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg|Open: PCA-image-20240708153509944.png]]
-![assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg](/img/user/assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg)
-
-[[assets/PCA/07fa66875f3dfaf0730678ca400162d8_MD5.jpeg|Open: PCA-image-20240708154358114.png]]
-![assets/PCA/07fa66875f3dfaf0730678ca400162d8_MD5.jpeg](/img/user/assets/PCA/07fa66875f3dfaf0730678ca400162d8_MD5.jpeg)
+> [!NOTE]- Answer
+> C. Ensure that a firewall rule exists to allow load balancer health checks to reach the instances in the instance group
+> 
+> # Notes
+> [后端服务概览  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/backend-service?hl=zh-cn)
+> 防火牆與健康檢查
+> [[assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg|Open: PCA-image-20240708153509944.png]]
+> ![assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg](/img/user/assets/PCA/d27dcffbcc12470c7f88480fdd709824_MD5.jpeg)
+> [[assets/PCA/07fa66875f3dfaf0730678ca400162d8_MD5.jpeg|Open: PCA-image-20240708154358114.png]]
+> ![assets/PCA/07fa66875f3dfaf0730678ca400162d8_MD5.jpeg](/img/user/assets/PCA/07fa66875f3dfaf0730678ca400162d8_MD5.jpeg)
 
 ---
 **Question #10**
@@ -145,11 +135,14 @@ What should you do to fix the script?**
 C. Create a new service account with BigQuery access and execute your script with that user<br>
 </details>
 
-# Notes
-[为 API 请求授权  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/authorization?hl=zh-cn#client-libraries)
-服務帳戶建立
-[[assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg|Open: PCA-image-20240708152529305.png]]
-![assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg](/img/user/assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg)
+> [!NOTE]- Answer
+> C. Create a new service account with BigQuery access and execute your script with that user
+> 
+> # Notes
+> [为 API 请求授权  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/authorization?hl=zh-cn#client-libraries)
+> 服務帳戶建立
+> [[assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg|Open: PCA-image-20240708152529305.png]]
+> ![assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg](/img/user/assets/PCA/d7db03f1d216b322ad058f7629267b58_MD5.jpeg)
 
 ---
 **Question #26**
@@ -168,20 +161,16 @@ Which approach should you use?**
 - #### *C. 使用預設保留策略為所有專案配置 Stackdriver Monitoring*
 - #### *D. 為所有專案配置 Stackdriver Monitoring，並匯出至 Google Cloud Storage*
 
-<details>
-<summary>答案</summary>
-D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage<br>
-</details>
-
-# Notes
-[将日志路由到支持的目的地  |  Cloud Logging  |  Google Cloud](https://cloud.google.com/logging/docs/export/configure_export_v2?hl=zh-cn)
-預設保留策略：
-保留最新6週監控數據
-
-匯出設定方式：
-[[assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg|Open: PCA-image-20240710163111852.png]]
-![assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg](/img/user/assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg)
-
+> [!NOTE]- Answer
+> D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage
+> 
+> # Notes
+> [将日志路由到支持的目的地  |  Cloud Logging  |  Google Cloud](https://cloud.google.com/logging/docs/export/configure_export_v2?hl=zh-cn)
+> 預設保留策略：
+   保留最新6週監控數據
+> 匯出設定方式：
+> [[assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg|Open: PCA-image-20240710163111852.png]]
+> ![assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg](/img/user/assets/PCA/1f63295ec5b54b7abd5cf1fbbfd76bad_MD5.jpeg)
 
 ---
 **Question #27**
@@ -200,16 +189,14 @@ Which networking approach should you use?**
 - #### *C. 本機安裝的 NAT 和 TLS 轉換網關*
 - #### *D. Google Compute Engine 實例安裝VPN 伺服器連線到資料中心網路*
 
-<details>
-<summary>答案</summary>
-A. Google Cloud Dedicated Interconnect<br>
-</details>
-
-# Notes
-[专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
-[Cloud VPN 概览  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview?hl=zh-cn)
-[[assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg|Open: PCA-image-20240716104810403.png]]
-![assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg](/img/user/assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg)
+> [!NOTE]- Answer
+> A. Google Cloud Dedicated Interconnect
+> 
+> # Notes
+> [专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
+> [Cloud VPN 概览  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview?hl=zh-cn)
+> [[assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg|Open: PCA-image-20240716104810403.png]]
+> ![assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg](/img/user/assets/PCA/b3dd78be333d44a28b94e3e87da7e6da_MD5.jpeg)
 
 ---
 **Question #28**
@@ -228,23 +215,21 @@ What should you do?**
 - #### *C. 使用雲端函數將日誌條目傳輸到 Google Cloud SQL，並使用 ACL 和檢視來限制審核員的檢視*
 - #### *D. 啟用 Google Cloud Storage (GCS) 日誌匯出，以審核日誌到 GCS 儲存桶並委派對該儲存桶的存取權限*
 
-<details>
-<summary>答案</summary>
-B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor<br>
-</details>
-
-# Notes
-[负有审核相关工作职责的 IAM 角色  |  IAM 文档  |  Google Cloud](https://cloud.google.com/iam/docs/job-functions/auditing?hl=zh-cn#scenario_external_auditors)
-[[assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg|Open: PCA-image-20240715165522502.png]]
-![assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg](/img/user/assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg)
-[[assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg|Open: PCA-image-20240715165532896.png]]
-![assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg](/img/user/assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg)
-[[assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg|Open: PCA-image-20240715172936030.png]]
-![assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg](/img/user/assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg)
-[[assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg|Open: PCA-image-20240715173107356.png]]
-![assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg](/img/user/assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg)
-[[assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg|Open: PCA-image-20240715173117999.png]]
-![assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg](/img/user/assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg)
+> [!NOTE]- Answer
+> B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor
+> 
+> # Notes
+> [负有审核相关工作职责的 IAM 角色  |  IAM 文档  |  Google Cloud](https://cloud.google.com/iam/docs/job-functions/auditing?hl=zh-cn#scenario_external_auditors)
+> [[assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg|Open: PCA-image-20240715165522502.png]]
+> ![assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg](/img/user/assets/PCA/3582b68e616b266121c28960d7f48756_MD5.jpeg)
+> [[assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg|Open: PCA-image-20240715165532896.png]]
+> ![assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg](/img/user/assets/PCA/bc95a640dfe71a375e4f5a2458d3f3aa_MD5.jpeg)
+> [[assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg|Open: PCA-image-20240715172936030.png]]
+> ![assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg](/img/user/assets/PCA/368cc8498efbb0cd8b9938857721808f_MD5.jpeg)
+> [[assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg|Open: PCA-image-20240715173107356.png]]
+> ![assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg](/img/user/assets/PCA/80d4247945b5c64b6bd627ff7ee6ac2b_MD5.jpeg)
+> [[assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg|Open: PCA-image-20240715173117999.png]]
+> ![assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg](/img/user/assets/PCA/0a2b1232ce01e7ab6cbf00ddf84e28c2_MD5.jpeg)
 
 ---
 **Question #29**
@@ -263,15 +248,13 @@ Where should you store the credentials?**
 - #### *C. 在秘密管理系統中*
 - #### *D. 在透過 ACL 限制存取的設定檔中*
 
-<details>
-<summary>答案</summary>
-C. In a secret management system<br>
-</details>
-
-# Notes
-[Secret Manager 概览  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=zh-cn)
-[[assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg|Open: PCA-image-20240715155416901.png]]
-![assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg](/img/user/assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg)
+> [!NOTE]- Answer
+> C. In a secret management system
+> 
+> # Notes
+> [Secret Manager 概览  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=zh-cn)
+> [[assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg|Open: PCA-image-20240715155416901.png]]
+> ![assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg](/img/user/assets/PCA/becfe552b43c53369e1e483ed86cc705_MD5.jpeg)
 
 ---
 **Question #30**
@@ -295,19 +278,16 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *E. Cloud Deployment Manager 可用於永久刪除雲端資源*
 - #### *F. Cloud Deployment Manager 僅支援 Google Cloud 資源的自動化*
 
-<details>
-<summary>答案</summary>
-C. Cloud Deployment Manager is unfamiliar to the company's engineers<br>
-F. Cloud Deployment Manager only supports automation of Google Cloud resources<br>
-</details>
-
-# Notes
-[Google Cloud Deployment Manager 文档  |  Cloud Deployment Manager Documentation](https://cloud.google.com/deployment-manager/docs?hl=zh-cn)
-[[assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg|Open: PCA-image-20240715145659726.png]]
-![assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg](/img/user/assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg)
-
-[[assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg|Open: PCA-image-20240716164512964.png]]
-![assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg](/img/user/assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg)
+> [!NOTE]- Answer
+> C. Cloud Deployment Manager is unfamiliar to the company's engineers
+> F. Cloud Deployment Manager only supports automation of Google Cloud resources
+> 
+> # Notes
+> [Google Cloud Deployment Manager 文档  |  Cloud Deployment Manager Documentation](https://cloud.google.com/deployment-manager/docs?hl=zh-cn)
+> [[assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg|Open: PCA-image-20240715145659726.png]]
+> ![assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg](/img/user/assets/PCA/3cf7a2d93afe6e127a9b729d2bdf5f4c_MD5.jpeg)
+> [[assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg|Open: PCA-image-20240716164512964.png]]
+> ![assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg](/img/user/assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg)
 
 ---
 **Question #51**
@@ -325,13 +305,10 @@ F. Cloud Deployment Manager only supports automation of Google Cloud resources<
 - #### *C. 在 GCP Console 中，使用 Datastore Admin 刪除目前索引並上傳新的設定檔*
 - #### *D. 建立一個對內建 python 模組的 HTTP 請求，將索引設定檔傳送到您的應用程式*
 
-<details>
-<summary>答案</summary>
-A. Point gcloud datastore create-indexes to your configuration file<br>
-</details>
-
-# Notes
-
+> [!NOTE]- Answer
+> A. Point gcloud datastore create-indexes to your configuration file
+> 
+> # Notes
 
 ---
 **Question #52**
@@ -349,13 +326,10 @@ A. Point gcloud datastore create-indexes to your configuration file<br>
 - #### *C. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例群組位於相同專案但位於不同區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
 - #### *D. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例組位於單獨的項目和不同的區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
 
-<details>
-<summary>答案</summary>
-C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.<br>
-</details>
-
-# Notes
-
+> [!NOTE]- Answer
+> C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.
+> 
+> # Notes
 
 ---
 **Question #53**
@@ -373,13 +347,10 @@ C. Deploy the application on two Compute Engine instance groups, each in the sa
 - #### *C. 在 App Engine 彈性環境中部署您的應用程序，並使用 App Engine 防火牆規則來限制對本機資料庫的存取。*
 - #### *D. 在 App Engine 靈活環境上部署您的應用程序，並使用 Cloud VPN 限制對本地資料庫的存取。*
 
-<details>
-<summary>答案</summary>
-D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.<br>
-</details>
-
-# Notes
-
+> [!NOTE]- Answer
+> D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.
+> 
+> # Notes
 
 ---
 **Question #54**
@@ -397,13 +368,10 @@ D. Deploy your application on App Engine flexible environment and use Cloud VPN
 - #### *C. 將所需的安裝檔案上傳至 Cloud Source Repositories。在具有專用 Google Access 子網路的子網路上設定虛擬機器。僅向 VM 指派內部 IP 位址。使用 gcloud 將安裝檔下載到虛擬機器。*
 - #### *D. 將所需的安裝檔案上傳到雲端來源庫，並使用防火牆規則阻止除雲端來源庫 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
 
-<details>
-<summary>答案</summary>
-A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.<br>
-</details>
-
-# Notes
-
+> [!NOTE]- Answer
+> A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.
+> 
+> # Notes
 
 ---
 **Question #55**
@@ -421,16 +389,12 @@ A. Upload the required installation files to Cloud Storage. Configure the VM on
 - #### *C. 在包含資料的每台伺服器上安裝 gsutil。使用可恢復傳輸將資料上傳至 Cloud Storage。*
 - #### *D. 在每台包含資料的伺服器上安裝 gsutil。使用串流傳輸將資料上傳到雲端儲存。*
 
-<details>
-<summary>答案</summary>
-A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.<br>
-</details>
-
-# Notes
-
+> [!NOTE]- Answer
+> A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.
+> 
+> # Notes
 
 ---
  
-> [!NOTE]- Title
-> Contents
+
 
