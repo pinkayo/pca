@@ -310,3 +310,127 @@ F. Cloud Deployment Manager only supports automation of Google Cloud resources<
 ![assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg](/img/user/assets/PCA/dfff71624b3f70bac0ad04b4cc913c31_MD5.jpeg)
 
 ---
+**Question #51**
+**You have found an error in your App Engine application caused by missing Cloud Datastore indexes. You have created a YAML file with the required indexes and want to deploy these new indexes to Cloud Datastore. What should you do? **
+
+- **A. Point gcloud datastore create-indexes to your configuration file**
+- **B. Upload the configuration file to App Engine's default Cloud Storage bucket, and have App Engine detect the new indexes**
+- **C. In the GCP Console, use Datastore Admin to delete the current indexes and upload the new configuration file**
+- **D. Create an HTTP request to the built-in python module to send the index configuration file to your application**
+
+#### *您發現 App Engine 應用程式中存在由於缺少 Cloud Datastore 索引而導致的錯誤。您已建立包含所需索引的 YAML 文件，並希望將這些新索引部署到 Cloud Datastore。你該怎麼辦？*
+
+- #### *A. 將 gcloud datastore create-indexes 指向您的設定檔*
+- #### *B. 將設定檔上傳到 App Engine 的預設 Cloud Storage 儲存桶，並讓 App Engine 偵測新索引*
+- #### *C. 在 GCP Console 中，使用 Datastore Admin 刪除目前索引並上傳新的設定檔*
+- #### *D. 建立一個對內建 python 模組的 HTTP 請求，將索引設定檔傳送到您的應用程式*
+
+<details>
+<summary>答案</summary>
+A. Point gcloud datastore create-indexes to your configuration file<br>
+</details>
+
+# Notes
+
+
+---
+**Question #52**
+**You have an application that will run on Compute Engine. You need to design an architecture that takes into account a disaster recovery plan that requires your application to fail over to another region in case of a regional outage. What should you do?**
+
+- **A. Deploy the application on two Compute Engine instances in the same project but in a different region. Use the first instance to serve traffic, and use the HTTP load balancing service to fail over to the standby instance in case of a disaster.**
+- **B. Deploy the application on a Compute Engine instance. Use the instance to serve traffic, and use the HTTP load balancing service to fail over to an instance on your premises in case of a disaster.**
+- **C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.**
+- **D. Deploy the application on two Compute Engine instance groups, each in a separate project and a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.**
+
+#### *您有一個將在 Compute Engine 上運行的應用程式。您需要設計一個考慮到災難復原計劃的架構，該計劃要求您的應用程式在發生區域中斷時故障轉移到另一個區域。你該怎麼辦？*
+
+- #### *A. 將應用程式部署在同一專案但位於不同區域的兩個 Compute Engine 執行個體上。使用第一個執行個體來提供流量，並使用 HTTP 負載平衡服務在發生災難時故障轉移到備用實例。*
+- #### *B. 在 Compute Engine 執行個體上部署應用程式。使用執行個體提供流量服務，並使用 HTTP 負載平衡服務在發生災難時故障轉移到您本地的執行個體。*
+- #### *C. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例群組位於相同專案但位於不同區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
+- #### *D. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例組位於單獨的項目和不同的區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
+
+<details>
+<summary>答案</summary>
+C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.<br>
+</details>
+
+# Notes
+
+
+---
+**Question #53**
+**You are deploying an application on App Engine that needs to integrate with an on-premises database. For security purposes, your on-premises database must not be accessible through the public internet. What should you do?**
+
+- **A. Deploy your application on App Engine standard environment and use App Engine firewall rules to limit access to the open on-premises database.**
+- **B. Deploy your application on App Engine standard environment and use Cloud VPN to limit access to the on-premises database.**
+- **C. Deploy your application on App Engine flexible environment and use App Engine firewall rules to limit access to the on-premises database.**
+- **D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.**
+
+#### *您正在 App Engine 上部署需要與本機資料庫整合的應用程式。出於安全目的，您的本地資料庫不得透過公共網路存取。你該怎麼辦？*
+
+- #### *A. 在 App Engine 標準環境中部署您的應用程序，並使用 App Engine 防火牆規則來限制對開放本地資料庫的存取。*
+- #### *B. 在 App Engine 標準環境上部署您的應用程序，並使用 Cloud VPN 限制對本機資料庫的存取。*
+- #### *C. 在 App Engine 彈性環境中部署您的應用程序，並使用 App Engine 防火牆規則來限制對本機資料庫的存取。*
+- #### *D. 在 App Engine 靈活環境上部署您的應用程序，並使用 Cloud VPN 限制對本地資料庫的存取。*
+
+<details>
+<summary>答案</summary>
+D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.<br>
+</details>
+
+# Notes
+
+
+---
+**Question #54**
+**You are working in a highly secured environment where public Internet access from the Compute Engine VMs is not allowed. You do not yet have a VPN connection to access an on-premises file server. You need to install specific software on a Compute Engine instance. How should you install the software?**
+
+- **A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.**
+- **B. Upload the required installation files to Cloud Storage and use firewall rules to block all traffic except the IP address range for Cloud Storage. Download the files to the VM using gsutil.**
+- **C. Upload the required installation files to Cloud Source Repositories. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gcloud.**
+- **D. Upload the required installation files to Cloud Source Repositories and use firewall rules to block all traffic except the IP address range for Cloud Source Repositories. Download the files to the VM using gsutil.**
+
+#### *您正在高度安全的環境中工作，不允許從 Compute Engine 虛擬機器存取公共互聯網。您還沒有用於存取本機檔案伺服器的 VPN 連線。您需要在 Compute Engine 實例上安裝特定軟體。您應該如何安裝該軟體？*
+
+- #### *A. 將所需的安裝檔案上傳到雲端儲存。在具有專用 Google Access 子網路的子網路上設定虛擬機器。僅向 VM 指派內部 IP 位址。使用 gsutil 將安裝檔下載到 VM。*
+- #### *B. 將所需的安裝檔案上傳到雲端存儲，並使用防火牆規則阻止除雲端儲存的 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
+- #### *C. 將所需的安裝檔案上傳至 Cloud Source Repositories。在具有專用 Google Access 子網路的子網路上設定虛擬機器。僅向 VM 指派內部 IP 位址。使用 gcloud 將安裝檔下載到虛擬機器。*
+- #### *D. 將所需的安裝檔案上傳到雲端來源庫，並使用防火牆規則阻止除雲端來源庫 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
+
+<details>
+<summary>答案</summary>
+A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.<br>
+</details>
+
+# Notes
+
+
+---
+**Question #55**
+**Your company is moving 75 TB of data into Google Cloud. You want to use Cloud Storage and follow Google-recommended practices. What should you do?**
+
+- **A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.**
+- **B. Move your data onto a Transfer Appliance. Use Cloud Dataprep to decrypt the data into Cloud Storage.**
+- **C. Install gsutil on each server that contains data. Use resumable transfers to upload the data into Cloud Storage.**
+- **D. Install gsutil on each server containing data. Use streaming transfers to upload the data into Cloud Storage.**
+
+#### *貴公司正在將 75 TB 的資料遷移到 Google Cloud。您想要使用 Cloud Storage 並遵循 Google 推薦的做法。你該做什麼？*
+
+- #### *A. 將您的資料移至傳輸設備上。使用 Transfer Appliance ReHydrator 將資料解密到 Cloud Storage 中。*
+- #### *B. 將您的資料移至傳輸設備上。使用 Cloud Dataprep 將資料解密到 Cloud Storage。*
+- #### *C. 在包含資料的每台伺服器上安裝 gsutil。使用可恢復傳輸將資料上傳至 Cloud Storage。*
+- #### *D. 在每台包含資料的伺服器上安裝 gsutil。使用串流傳輸將資料上傳到雲端儲存。*
+
+<details>
+<summary>答案</summary>
+A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.<br>
+</details>
+
+# Notes
+
+
+---
+ 
+> [!NOTE]- Title
+> Contents
+
