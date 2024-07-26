@@ -21,8 +21,8 @@ Which additional two approaches can you take to further reduce the rollbacks? (C
 - #### *E. 將平台的關係型數據庫系統替換為NoSQL數據庫*
 
 > [!NOTE]- Answer
-> A. Introduce a green-blue deployment model
-> C. Fragment the monolithic platform into microservices
+> **A. Introduce a green-blue deployment model**
+> **C. Fragment the monolithic platform into microservices**
 > 
 > # Notes
 > 增加穩定度方式：容器化部署、負載平衡
@@ -48,8 +48,8 @@ Which two steps should you take? (Choose two.)**
 - #### *F. 將所有狀態儲存在 Google Cloud Storage 中，對永久性磁碟進行快照，並終止 VM*
 
 > [!NOTE]- Answer
-> A. Use the - -no-auto-delete flag on all persistent disks and stop the VM
-> D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted
+> **A. Use the - -no-auto-delete flag on all persistent disks and stop the VM**
+> **D. Use Google BigQuery billing export and labels to associate cost to groups Most Voted**
 > 
 > # Notes
 > [gcloud compute instances set-disk-auto-delete  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete#--auto-delete)
@@ -77,7 +77,7 @@ Which database type should you use?**
 - #### *D. 二進位大物件儲存*
 
 > [!NOTE]- Answer
-> B. NoSQL
+> **B. NoSQL**
 > 
 > # Notes
 > [[assets/PCA/d03a3f5cd1263539dc7e7fe4e146b8f9_MD5.jpeg|Open: PCA-image-20240708173116708.png]]
@@ -103,7 +103,7 @@ What should you do?**
 - #### *D. 在每個實例上創建一個帶有負載均衡器名稱的標籤。配置防火牆規則，將負載均衡器的名稱作為源，將實例標籤作為目標*
 
 > [!NOTE]- Answer
-> C. Ensure that a firewall rule exists to allow load balancer health checks to reach the instances in the instance group
+> **C. Ensure that a firewall rule exists to allow load balancer health checks to reach the instances in the instance group**
 > 
 > # Notes
 > [后端服务概览  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/backend-service?hl=zh-cn)
@@ -130,13 +130,8 @@ What should you do to fix the script?**
 - #### *C. 建立一個具有 BigQuery 訪問許可權的新服務帳號，並使用該使用者執行腳本*
 - #### *D. 使用命令 gcloud components install bq 安裝 gcloud 的 bq 元件*
 
-<details>
-<summary>答案</summary>
-C. Create a new service account with BigQuery access and execute your script with that user<br>
-</details>
-
 > [!NOTE]- Answer
-> C. Create a new service account with BigQuery access and execute your script with that user
+> **C. Create a new service account with BigQuery access and execute your script with that user**
 > 
 > # Notes
 > [为 API 请求授权  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/authorization?hl=zh-cn#client-libraries)
@@ -162,7 +157,7 @@ Which approach should you use?**
 - #### *D. 為所有專案配置 Stackdriver Monitoring，並匯出至 Google Cloud Storage*
 
 > [!NOTE]- Answer
-> D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage
+> **D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage**
 > 
 > # Notes
 > [将日志路由到支持的目的地  |  Cloud Logging  |  Google Cloud](https://cloud.google.com/logging/docs/export/configure_export_v2?hl=zh-cn)
@@ -190,7 +185,7 @@ Which networking approach should you use?**
 - #### *D. Google Compute Engine 實例安裝VPN 伺服器連線到資料中心網路*
 
 > [!NOTE]- Answer
-> A. Google Cloud Dedicated Interconnect
+> **A. Google Cloud Dedicated Interconnect**
 > 
 > # Notes
 > [专用互连概览  |  Cloud Interconnect  |  Google Cloud](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?hl=zh-cn)
@@ -216,7 +211,7 @@ What should you do?**
 - #### *D. 啟用 Google Cloud Storage (GCS) 日誌匯出，以審核日誌到 GCS 儲存桶並委派對該儲存桶的存取權限*
 
 > [!NOTE]- Answer
-> B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor
+> **B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor**
 > 
 > # Notes
 > [负有审核相关工作职责的 IAM 角色  |  IAM 文档  |  Google Cloud](https://cloud.google.com/iam/docs/job-functions/auditing?hl=zh-cn#scenario_external_auditors)
@@ -249,7 +244,7 @@ Where should you store the credentials?**
 - #### *D. 在透過 ACL 限制存取的設定檔中*
 
 > [!NOTE]- Answer
-> C. In a secret management system
+> **C. In a secret management system**
 > 
 > # Notes
 > [Secret Manager 概览  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=zh-cn)
@@ -279,8 +274,8 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *F. Cloud Deployment Manager 僅支援 Google Cloud 資源的自動化*
 
 > [!NOTE]- Answer
-> C. Cloud Deployment Manager is unfamiliar to the company's engineers
-> F. Cloud Deployment Manager only supports automation of Google Cloud resources
+> **C. Cloud Deployment Manager is unfamiliar to the company's engineers**
+> **F. Cloud Deployment Manager only supports automation of Google Cloud resources**
 > 
 > # Notes
 > [Google Cloud Deployment Manager 文档  |  Cloud Deployment Manager Documentation](https://cloud.google.com/deployment-manager/docs?hl=zh-cn)
@@ -306,7 +301,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *D. 建立一個對內建 python 模組的 HTTP 請求，將索引設定檔傳送到您的應用程式*
 
 > [!NOTE]- Answer
-> A. Point gcloud datastore create-indexes to your configuration file
+> **A. Point gcloud datastore create-indexes to your configuration file**
 > 
 > # Notes
 
@@ -327,7 +322,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *D. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例組位於單獨的項目和不同的區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
 
 > [!NOTE]- Answer
-> C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.
+> **C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.**
 > 
 > # Notes
 
@@ -348,7 +343,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *D. 在 App Engine 靈活環境上部署您的應用程序，並使用 Cloud VPN 限制對本地資料庫的存取。*
 
 > [!NOTE]- Answer
-> D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.
+> **D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.**
 > 
 > # Notes
 
@@ -369,7 +364,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *D. 將所需的安裝檔案上傳到雲端來源庫，並使用防火牆規則阻止除雲端來源庫 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
 
 > [!NOTE]- Answer
-> A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.
+> **A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.**
 > 
 > # Notes
 
@@ -390,7 +385,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *D. 在每台包含資料的伺服器上安裝 gsutil。使用串流傳輸將資料上傳到雲端儲存。*
 
 > [!NOTE]- Answer
-> A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.
+> **A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.**
 > 
 > # Notes
 
