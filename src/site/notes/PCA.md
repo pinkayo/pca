@@ -331,6 +331,9 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.**
 > 
 > # Notes
+> [为外部直通式网络负载均衡器配置故障切换  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/network/networklb-setting-up-failover?hl=zh-cn)
+> [[assets/PCA/8dff30ac8ff1221a4ae4044cfb53c06b_MD5.jpeg|Open: PCA-image-20240730104933859.png]]
+> ![assets/PCA/8dff30ac8ff1221a4ae4044cfb53c06b_MD5.jpeg](/img/user/assets/PCA/8dff30ac8ff1221a4ae4044cfb53c06b_MD5.jpeg)
 
 ---
 **Question #53**
