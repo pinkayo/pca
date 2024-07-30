@@ -304,6 +304,12 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **A. Point gcloud datastore create-indexes to your configuration file**
 > 
 > # Notes
+> [gcloud datastore indexes create  |  Google Cloud CLI Documentation](https://cloud.google.com/sdk/gcloud/reference/datastore/indexes/create)
+> [价格  |  Datastore  |  Google Cloud](https://cloud.google.com/datastore/pricing?hl=zh-cn)
+> [[assets/PCA/41fb6ea1875fcbb14e80466be184ce36_MD5.jpeg|Open: PCA-image-20240729165841757.png]]
+> ![assets/PCA/41fb6ea1875fcbb14e80466be184ce36_MD5.jpeg](/img/user/assets/PCA/41fb6ea1875fcbb14e80466be184ce36_MD5.jpeg)
+> [[assets/PCA/5dc07bc0740926396ee1fd6d913d6c67_MD5.jpeg|Open: PCA-image-20240729170836462.png]]
+> ![assets/PCA/5dc07bc0740926396ee1fd6d913d6c67_MD5.jpeg](/img/user/assets/PCA/5dc07bc0740926396ee1fd6d913d6c67_MD5.jpeg)
 
 ---
 **Question #52**
@@ -319,7 +325,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - #### *A. 將應用程式部署在同一專案但位於不同區域的兩個 Compute Engine 執行個體上。使用第一個執行個體來提供流量，並使用 HTTP 負載平衡服務在發生災難時故障轉移到備用實例。*
 - #### *B. 在 Compute Engine 執行個體上部署應用程式。使用執行個體提供流量服務，並使用 HTTP 負載平衡服務在發生災難時故障轉移到您本地的執行個體。*
 - #### *C. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例群組位於相同專案但位於不同區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
-- #### *D. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例組位於單獨的項目和不同的區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
+- #### *D. 在兩個 Compute Engine 實例群組上部署應用程序，每個實例組位於單獨的專案和不同的區域。使用第一個實例組來提供流量，並使用 HTTP 負載平衡服務在災難發生時故障轉移到備用實例組。*
 
 > [!NOTE]- Answer
 > **C. Deploy the application on two Compute Engine instance groups, each in the same project but in a different region. Use the first instance group to serve traffic, and use the HTTP load balancing service to fail over to the standby instance group in case of a disaster.**
