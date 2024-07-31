@@ -348,13 +348,14 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 
 - #### *A. 在 App Engine 標準環境中部署您的應用程序，並使用 App Engine 防火牆規則來限制對開放本地資料庫的存取。*
 - #### *B. 在 App Engine 標準環境上部署您的應用程序，並使用 Cloud VPN 限制對本機資料庫的存取。*
-- #### *C. 在 App Engine 彈性環境中部署您的應用程序，並使用 App Engine 防火牆規則來限制對本機資料庫的存取。*
-- #### *D. 在 App Engine 靈活環境上部署您的應用程序，並使用 Cloud VPN 限制對本地資料庫的存取。*
+- #### *C. 在 App Engine 柔性環境中部署您的應用程序，並使用 App Engine 防火牆規則來限制對本機資料庫的存取。*
+- #### *D. 在 App Engine 柔性環境上部署您的應用程序，並使用 Cloud VPN 限制對本地資料庫的存取。*
 
 > [!NOTE]- Answer
 > **D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.**
 > 
 > # Notes
+> 
 
 ---
 **Question #54**
@@ -367,15 +368,22 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 
 #### *您正在高度安全的環境中工作，不允許從 Compute Engine 虛擬機器存取公共互聯網。您還沒有用於存取本機檔案伺服器的 VPN 連線。您需要在 Compute Engine 實例上安裝特定軟體。您應該如何安裝該軟體？*
 
-- #### *A. 將所需的安裝檔案上傳到雲端儲存。在具有專用 Google Access 子網路的子網路上設定虛擬機器。僅向 VM 指派內部 IP 位址。使用 gsutil 將安裝檔下載到 VM。*
-- #### *B. 將所需的安裝檔案上傳到雲端存儲，並使用防火牆規則阻止除雲端儲存的 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
-- #### *C. 將所需的安裝檔案上傳至 Cloud Source Repositories。在具有專用 Google Access 子網路的子網路上設定虛擬機器。僅向 VM 指派內部 IP 位址。使用 gcloud 將安裝檔下載到虛擬機器。*
-- #### *D. 將所需的安裝檔案上傳到雲端來源庫，並使用防火牆規則阻止除雲端來源庫 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
+- #### *A. 將所需的安裝檔案上傳到Cloud Storage。將虛擬機器設定在具有私人 Google 存取功能的子網路上。僅指定內部 IP 位址給虛擬機器。使用 gsutil 將安裝檔下載到 VM。*
+- #### *B. 將所需的安裝檔案上傳到Cloud Storage，並使用防火牆規則阻止除雲端儲存的 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
+- #### *C. 將所需的安裝檔案上傳至 Cloud Source Repositories，在具有專用 Google Access 子網路的子網路上設定虛擬機器。僅向 VM 指派內部 IP 位址。使用 gcloud 將安裝檔下載到虛擬機器。*
+- #### *D. 將所需的安裝檔案上傳到Cloud Source Repositories，並使用防火牆規則阻止除雲端來源庫 IP 位址範圍之外的所有流量。使用 gsutil 將檔案下載到 VM。*
 
 > [!NOTE]- Answer
 > **A. Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.**
 > 
 > # Notes
+> [cp - Copy files and objects  |  Cloud Storage  |  Google Cloud](https://cloud.google.com/storage/docs/gsutil/commands/cp)
+> > [[assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg|Open: PCA-image-20240731143111513.png]]
+> ![assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg](/img/user/assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg)
+> [New gcloud storage CLI for your data transfers | Google Cloud Blog](https://cloud.google.com/blog/products/storage-data-transfer/new-gcloud-storage-cli-for-your-data-transfers)
+> gcloud storage效能較gsutil快，建議使用下面指令執行
+> [[assets/PCA/9b779d062525135241747fd92f47b5e5_MD5.jpeg|Open: PCA-image-20240731172748404.png]]
+> ![assets/PCA/9b779d062525135241747fd92f47b5e5_MD5.jpeg](/img/user/assets/PCA/9b779d062525135241747fd92f47b5e5_MD5.jpeg)
 
 ---
 **Question #55**
@@ -397,6 +405,11 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **A. Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.**
 > 
 > # Notes
+> [概览  |  Transfer Appliance  |  Google Cloud](https://cloud.google.com/transfer-appliance/docs/4.0/overview?hl=zh-cn)
+> [[assets/PCA/300a51853f7e60efe88d02248f955d48_MD5.jpeg|Open: PCA-image-20240731144018052.png]]
+> ![assets/PCA/300a51853f7e60efe88d02248f955d48_MD5.jpeg](/img/user/assets/PCA/300a51853f7e60efe88d02248f955d48_MD5.jpeg)
+> [Introducing Google Cloud’s Transfer Appliance - YouTube](https://youtu.be/4g2ntSRU2pI)
+
 
 ---
  
