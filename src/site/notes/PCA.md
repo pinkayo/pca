@@ -355,7 +355,13 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **D. Deploy your application on App Engine flexible environment and use Cloud VPN to limit access to the on-premises database.**
 > 
 > # Notes
-> 
+> [App Engine 应用平台 | Google Cloud](https://cloud.google.com/appengine?hl=zh-cn#all-features)
+> [[assets/PCA/bd9c1d9e51bba8f35113fbda1a06c74d_MD5.jpeg|Open: PCA-image-20240801163822509.png]]
+> ![assets/PCA/bd9c1d9e51bba8f35113fbda1a06c74d_MD5.jpeg](/img/user/assets/PCA/bd9c1d9e51bba8f35113fbda1a06c74d_MD5.jpeg)
+> [[assets/PCA/a0c898d302accafebac2fab55f83bb96_MD5.jpeg|Open: PCA-image-20240801163208071.png]]
+> ![assets/PCA/a0c898d302accafebac2fab55f83bb96_MD5.jpeg](/img/user/assets/PCA/a0c898d302accafebac2fab55f83bb96_MD5.jpeg)
+> [[assets/PCA/d2cf6b734b565d96ccf68054fc065182_MD5.jpeg|Open: PCA-image-20240801163449491.png]]
+> ![assets/PCA/d2cf6b734b565d96ccf68054fc065182_MD5.jpeg](/img/user/assets/PCA/d2cf6b734b565d96ccf68054fc065182_MD5.jpeg)
 
 ---
 **Question #54**
@@ -378,7 +384,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > 
 > # Notes
 > [cp - Copy files and objects  |  Cloud Storage  |  Google Cloud](https://cloud.google.com/storage/docs/gsutil/commands/cp)
-> > [[assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg|Open: PCA-image-20240731143111513.png]]
+> [[assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg|Open: PCA-image-20240731143111513.png]]
 > ![assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg](/img/user/assets/PCA/4e6650a33b72eacc42a71ca673aae5b1_MD5.jpeg)
 > [New gcloud storage CLI for your data transfers | Google Cloud Blog](https://cloud.google.com/blog/products/storage-data-transfer/new-gcloud-storage-cli-for-your-data-transfers)
 > gcloud storage效能較gsutil快，建議使用下面指令執行
@@ -410,8 +416,110 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > ![assets/PCA/300a51853f7e60efe88d02248f955d48_MD5.jpeg](/img/user/assets/PCA/300a51853f7e60efe88d02248f955d48_MD5.jpeg)
 > [Introducing Google Cloud’s Transfer Appliance - YouTube](https://youtu.be/4g2ntSRU2pI)
 
+---
+**Question #: 71**
+**Your company is running a stateless application on a Compute Engine instance. The application is used heavily during regular business hours and lightly outside of business hours. Users are reporting that the application is slow during peak hours. You need to optimize the application's performance. What should you do?**
+
+- **A. Create a snapshot of the existing disk. Create an instance template from the snapshot. Create an autoscaled managed instance group from the instance template.**
+- **B. Create a snapshot of the existing disk. Create a custom image from the snapshot. Create an autoscaled managed instance group from the custom image.**
+- **C. Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.**
+- **D. Create an instance template from the existing disk. Create a custom image from the instance template. Create an autoscaled managed instance group from the custom image.**
+
+#### *您的公司正在 Compute Engine 執行個體上執行無狀態應用程式。該應用程式在正常工作時間內使用較多，在工作時間內較少使用。用戶報告說應用程式在高峰時段速度很慢。您需要優化應用程式的效能。你該怎麼辦？*
+
+- #### *A. 建立現有磁碟的快照。從快照建立實例模板。從實例範本建立自動擴充的託管實例群組。*
+- #### *B. 建立現有磁碟的快照。從快照建立自訂圖像。從自訂映像建立自動縮放的託管實例群組。*
+- #### *C. 從現有磁碟建立自訂映像。從自訂鏡像建立實例模板。從實例範本建立自動擴充的託管實例群組。*
+- #### *D. 從現有磁碟建立實例範本。從實例模板建立自訂圖像。從自訂映像建立自動縮放的託管實例群組。*
+
+> [!NOTE]- Answer
+> **C. Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.**
+> 
+> # Notes
+> 
 
 ---
- 
+**Question #: 72**
+**Your web application has several VM instances running within a VPC. You want to restrict communications between instances to only the paths and ports you authorize, but you don't want to rely on static IP addresses or subnets because the app can autoscale. How should you restrict communications?**
 
+- **A. Use separate VPCs to restrict traffic**
+- **B. Use firewall rules based on network tags attached to the compute instances**
+- **C. Use Cloud DNS and only allow connections from authorized hostnames**
+- **D. Use service accounts and configure the web application to authorize particular service accounts to have access**
 
+#### *您的 Web 應用程式有多個在 VPC 中執行的 VM 實例。您希望將執行個體之間的通訊限制為僅限您授權的路徑和端口，但您不想依賴靜態 IP 位址或子網，因為應用程式可以自動縮放。您應該如何限制通訊？*
+
+- #### *A. 使用單獨的VPC來限制流量*
+- #### *B. 使用基於附加到計算實例的網路標籤的防火牆規則*
+- #### *C. 使用 Cloud DNS 並僅允許來自授權主機名稱的連接*
+- #### *D. 使用服務帳戶並設定 Web 應用程式以授權特定服務帳戶具有存取權限*
+
+> [!NOTE]- Answer
+> **B. Use firewall rules based on network tags attached to the compute instances**
+> 
+> # Notes
+
+---
+**Question #: 73**
+**You are using Cloud SQL as the database backend for a large CRM deployment. You want to scale as usage increases and ensure that you don't run out of storage, maintain 75% CPU usage cores, and keep replication lag below 60 seconds. What are the correct steps to meet your requirements?**
+
+- **A. 1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.**
+- **B. 1. Enable automatic storage increase for the instance. 2. Change the instance type to a 32-core machine type to keep CPU usage below 75%. 3. Create a Stackdriver alert for replication lag, and deploy memcache to reduce load on the master.**
+- **C. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Change the instance type to a 32-core machine type to reduce replication lag.**
+- **D. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Create a Stackdriver alert for replication lag, and change the instance type to a 32-core machine type to reduce replication lag.**
+
+#### *您正在使用 Cloud SQL 作為大型 CRM 部署的資料庫後端。您希望隨著使用量的增加而擴展，並確保不會耗盡儲存空間、保持 75% 的 CPU 使用率並將複製延遲保持在 60 秒以下。滿足您的要求的正確步驟是什麼？*
+
+- #### *A. 1. 開啟實例儲存體自動增加功能。 2. 當CPU使用率超過75%時建立Stackdriver警報，並變更實例類型以降低CPU使用率。 3. 針對複製延遲建立 Stackdriver 警報，並對資料庫進行分片以減少複製時間。*
+- #### *B. 1. 啟用實例自動儲存增加。 2. 將實例類型變更為32核心機器類型，使CPU佔用率保持在75%以下。 3. 針對複製延遲建立 Stackdriver 警報，並部署 memcache 以減少主伺服器上的負載。*
+- #### *C. 1. 當儲存超過 75% 時建立 Stackdriver 警報，並增加實例上的可用儲存以建立更多空間。 2.部署memcached以減少CPU負載。 3. 將實例類型變更為32核心機器類型以減少複製延遲。*
+- #### *D. 1. 當儲存超過 75% 時建立 Stackdriver 警報，並增加實例上的可用儲存以建立更多空間。 2.部署memcached以減少CPU負載。 3. 針對複製延遲建立 Stackdriver 警報，並將實例類型變更為 32 核心機器類型以減少複製延遲。*
+
+> [!NOTE]- Answer
+> **A. 1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.**
+> 
+> # Notes
+
+---
+**Question #: 74**
+**You are tasked with building an online analytical processing (OLAP) marketing analytics and reporting tool. This requires a relational database that can operate on hundreds of terabytes of data. What is the Google-recommended tool for such applications?**
+
+- **A. Cloud Spanner, because it is globally distributed**
+- **B. Cloud SQL, because it is a fully managed relational database**
+- **C. Cloud Firestore, because it offers real-time synchronization across devices**
+- **D. BigQuery, because it is designed for large-scale processing of tabular data**
+
+#### *您的任務是建立線上分析處理 (OLAP) 行銷分析和報告工具。這需要一個可以處理數百 TB 資料的關聯式資料庫。對於此類應用程序，Google 推薦的工具是什麼？*
+
+- #### *A. Cloud Spanner，因為它是全球分佈的*
+- #### *B. Cloud SQL，因為它是完全託管的關聯式資料庫*
+- #### *C. Cloud Firestore，因為它提供跨裝置即時同步*
+- #### *D. BigQuery，因為它是為大規模處理表格資料而設計的*
+
+> [!NOTE]- Answer
+> **D. BigQuery, because it is designed for large-scale processing of tabular data**
+> 
+> # Notes
+
+---
+**Question #: 75**
+**You have deployed an application to Google Kubernetes Engine (GKE), and are using the Cloud SQL proxy container to make the Cloud SQL database available to the services running on Kubernetes. You are notified that the application is reporting database connection issues. Your company policies require a post- mortem. What should you do?**
+
+- **A. Use gcloud sql instances restart.**
+- **B. Validate that the Service Account used by the Cloud SQL proxy container still has the Cloud Build Editor role.**
+- **C. In the GCP Console, navigate to Stackdriver Logging. Consult logs for (GKE) and Cloud SQL.**
+- **D. In the GCP Console, navigate to Cloud SQL. Restore the latest backup. Use kubectl to restart all pods.**
+
+#### *您已將應用程式部署至 Google Kubernetes Engine (GKE)，並使用 Cloud SQL 代理程式容器使 Cloud SQL 資料庫可供 Kubernetes 上執行的服務使用。您會收到應用程式正在報告資料庫連線問題的通知。您的公司政策需要事後分析。你該怎麼辦？*
+
+- #### *A. 使用 gcloud sql 實例重新啟動。*
+- #### *B. 驗證 Cloud SQL 代理程式容器所使用的服務帳號仍具有 Cloud Build Editor 角色。*
+- #### *C. 在 GCP Console 中，導覽至 Stackdriver Logging。查看 (GKE) 和 Cloud SQL 的日誌。*
+- #### *D. 在 GCP Console 中，導覽至 Cloud SQL。恢復最新的備份。使用 kubectl 重新啟動所有 pod。*
+
+> [!NOTE]- Answer
+> **C. In the GCP Console, navigate to Stackdriver Logging. Consult logs for (GKE) and Cloud SQL.**
+> 
+> # Notes
+
+---
