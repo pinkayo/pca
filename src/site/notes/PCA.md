@@ -425,7 +425,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **C. Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.**
 - **D. Create an instance template from the existing disk. Create a custom image from the instance template. Create an autoscaled managed instance group from the custom image.**
 
-#### *您的公司正在 Compute Engine 執行個體上執行無狀態應用程式。該應用程式在正常工作時間內使用較多，在工作時間內較少使用。用戶報告說應用程式在高峰時段速度很慢。您需要優化應用程式的效能。你該怎麼辦？*
+#### *您的公司在 Compute Engine 實例上運行一個無狀態應用程式。該應用程式在正常工作時間使用頻繁，而在非工作時間使用較少。使用者報告說，該應用程式在高峰時段運行緩慢。您需要優化應用程式的性能。您應該做些什麼？*
 
 - #### *A. 建立現有磁碟的快照。從快照建立實例模板。從實例範本建立自動擴充的託管實例群組。*
 - #### *B. 建立現有磁碟的快照。從快照建立自訂圖像。從自訂映像建立自動縮放的託管實例群組。*
@@ -436,7 +436,11 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **C. Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.**
 > 
 > # Notes
-> 
+> 磁碟 -> 快照、映像檔
+> 快照 -> 磁碟、VM
+> 映像檔 -> VM
+> [[assets/PCA/ad18802364b8c9164841756a8fe7ea32_MD5.jpeg|Open: PCA-image-20240801184824931.png]]
+> ![assets/PCA/ad18802364b8c9164841756a8fe7ea32_MD5.jpeg](/img/user/assets/PCA/ad18802364b8c9164841756a8fe7ea32_MD5.jpeg)
 
 ---
 **Question #: 72**
@@ -447,7 +451,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **C. Use Cloud DNS and only allow connections from authorized hostnames**
 - **D. Use service accounts and configure the web application to authorize particular service accounts to have access**
 
-#### *您的 Web 應用程式有多個在 VPC 中執行的 VM 實例。您希望將執行個體之間的通訊限制為僅限您授權的路徑和端口，但您不想依賴靜態 IP 位址或子網，因為應用程式可以自動縮放。您應該如何限制通訊？*
+#### *您的網頁應用程式在 VPC 中運行着多個虛擬機器實例。您希望限制實例之間的通訊，只允許您授權的路徑和端口，但您不想依賴靜態 IP 地址或子網絡，因為應用程式可以自動縮放。您應該如何限制通訊？*
 
 - #### *A. 使用單獨的VPC來限制流量*
 - #### *B. 使用基於附加到計算實例的網路標籤的防火牆規則*
@@ -468,7 +472,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **C. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Change the instance type to a 32-core machine type to reduce replication lag.**
 - **D. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Create a Stackdriver alert for replication lag, and change the instance type to a 32-core machine type to reduce replication lag.**
 
-#### *您正在使用 Cloud SQL 作為大型 CRM 部署的資料庫後端。您希望隨著使用量的增加而擴展，並確保不會耗盡儲存空間、保持 75% 的 CPU 使用率並將複製延遲保持在 60 秒以下。滿足您的要求的正確步驟是什麼？*
+#### *您正在使用 Cloud SQL 作為大型 CRM 部署的資料庫後端。您希望隨著使用量的增加而擴展，並確保您不會耗盡儲存空間、維持 75% 的 CPU 使用率核心，並將複製延遲保持在 60 秒以下。滿足您需求的正確步驟是什麼？*
 
 - #### *A. 1. 開啟實例儲存體自動增加功能。 2. 當CPU使用率超過75%時建立Stackdriver警報，並變更實例類型以降低CPU使用率。 3. 針對複製延遲建立 Stackdriver 警報，並對資料庫進行分片以減少複製時間。*
 - #### *B. 1. 啟用實例自動儲存增加。 2. 將實例類型變更為32核心機器類型，使CPU佔用率保持在75%以下。 3. 針對複製延遲建立 Stackdriver 警報，並部署 memcache 以減少主伺服器上的負載。*
@@ -479,6 +483,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **A. 1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.**
 > 
 > # Notes
+> CRM 部署是指規劃、實施和整合客戶關係管理 (CRM) 系統到企業營運的過程。它不僅僅是軟體，還涵蓋一系列的步驟，旨在確保 CRM 系統能有效地滿足企業的特定需求，並幫助其達成業務目標。
 
 ---
 **Question #: 74**
@@ -489,7 +494,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **C. Cloud Firestore, because it offers real-time synchronization across devices**
 - **D. BigQuery, because it is designed for large-scale processing of tabular data**
 
-#### *您的任務是建立線上分析處理 (OLAP) 行銷分析和報告工具。這需要一個可以處理數百 TB 資料的關聯式資料庫。對於此類應用程序，Google 推薦的工具是什麼？*
+#### **你的任務是構建一個線上分析處理 (OLAP) 行銷分析和報告工具。這需要一個能夠處理數百 TB 資料的關聯式資料庫。Google 推薦用於此類應用程式的工具是什麼？**
 
 - #### *A. Cloud Spanner，因為它是全球分佈的*
 - #### *B. Cloud SQL，因為它是完全託管的關聯式資料庫*
@@ -500,6 +505,9 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **D. BigQuery, because it is designed for large-scale processing of tabular data**
 > 
 > # Notes
+> [BigQuery 概览  |  Google Cloud](https://cloud.google.com/files/BigQueryTechnicalWP.pdf)
+> [[assets/PCA/b03369543203471d7201a9b6b66af7f1_MD5.jpeg|Open: PCA-image-20240802175833487.png]]
+![assets/PCA/b03369543203471d7201a9b6b66af7f1_MD5.jpeg](/img/user/assets/PCA/b03369543203471d7201a9b6b66af7f1_MD5.jpeg)
 
 ---
 **Question #: 75**
@@ -510,7 +518,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 - **C. In the GCP Console, navigate to Stackdriver Logging. Consult logs for (GKE) and Cloud SQL.**
 - **D. In the GCP Console, navigate to Cloud SQL. Restore the latest backup. Use kubectl to restart all pods.**
 
-#### *您已將應用程式部署至 Google Kubernetes Engine (GKE)，並使用 Cloud SQL 代理程式容器使 Cloud SQL 資料庫可供 Kubernetes 上執行的服務使用。您會收到應用程式正在報告資料庫連線問題的通知。您的公司政策需要事後分析。你該怎麼辦？*
+#### *您已將應用程式部署到 Google Kubernetes Engine (GKE)，並正在使用 Cloud SQL 代理容器，以便 Kubernetes 上運行的服務能夠訪問 Cloud SQL 資料庫。您收到警報，指出應用程式遇到資料庫連線問題。貴公司要求在此類情況下進行事後分析。您應該採取哪些步驟？*
 
 - #### *A. 使用 gcloud sql 實例重新啟動。*
 - #### *B. 驗證 Cloud SQL 代理程式容器所使用的服務帳號仍具有 Cloud Build Editor 角色。*
@@ -521,5 +529,7 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > **C. In the GCP Console, navigate to Stackdriver Logging. Consult logs for (GKE) and Cloud SQL.**
 > 
 > # Notes
+> [[assets/PCA/bb02c82d9afd0da5f2242a7e48ea7506_MD5.jpeg|Open: PCA-image-20240802181339830.png]]
+> ![assets/PCA/bb02c82d9afd0da5f2242a7e48ea7506_MD5.jpeg](/img/user/assets/PCA/bb02c82d9afd0da5f2242a7e48ea7506_MD5.jpeg)
 
 ---
