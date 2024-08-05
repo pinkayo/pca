@@ -533,3 +533,128 @@ What are two business risks of migrating to Cloud Deployment Manager? (Choose tw
 > ![assets/PCA/bb02c82d9afd0da5f2242a7e48ea7506_MD5.jpeg](/img/user/assets/PCA/bb02c82d9afd0da5f2242a7e48ea7506_MD5.jpeg)
 
 ---
+**Question #: 91**
+**All Compute Engine instances in your VPC should be able to connect to an Active Directory server on specific ports. Any other traffic emerging from your instances is not allowed. You want to enforce this using VPC firewall rules.  How should you configure the firewall rules?**
+
+- **A. Create an egress rule with priority 1000 to deny all traffic for all instances. Create another egress rule with priority 100 to allow the Active Directory traffic for all instances.**
+- **B. Create an egress rule with priority 100 to deny all traffic for all instances. Create another egress rule with priority 1000 to allow the Active Directory traffic for all instances.**
+- **C. Create an egress rule with priority 1000 to allow the Active Directory traffic. Rely on the implied deny egress rule with priority 100 to block all traffic for all instances.**
+- **D. Create an egress rule with priority 100 to allow the Active Directory traffic. Rely on the implied deny egress rule with priority 1000 to block all traffic for all instances.**
+
+#### *您的 VPC 中的所有 Compute Engine 執行個體都應該能夠連接到特定端口上的 Active Directory 伺服器。 來自您執行個體的任何其他流量都不允許。 您希望使用 VPC 防火牆規則來強制執行此操作。  您應該如何設定防火牆規則？*
+
+- ##### *A. 建立一個優先順序為 1000 的出口規則，以拒絕所有執行個體的所有流量。 建立另一個優先順序為 100 的出口規則，以允許所有執行個體的 Active Directory 流量。  *
+- #### *B. 建立一個優先順序為 100 的出口規則，以拒絕所有執行個體的所有流量。 建立另一個優先順序為 1000 的出口規則，以允許所有執行個體的 Active Directory 流量。*  
+- #### *C. 建立一個優先順序為 1000 的出口規則，以允許 Active Directory 流量。 依靠優先順序為 100 的隱含拒絕出口規則來阻止所有執行個體的所有流量。*
+- #### *D. 建立一個優先順序為 100 的出口規則，以允許 Active Directory 流量。 依靠優先順序為 1000 的隱含拒絕出口規則來阻止所有執行個體的所有流量。*
+
+> [!NOTE]- Answer
+> **A. Create an egress rule with priority 1000 to deny all traffic for all instances. Create another egress rule with priority 100 to allow the Active Directory traffic for all instances.**
+> 
+> # Notes
+>  Cloud VPC 防火牆中，規則的優先順序決定了規則的應用順序。==數字越小，優先順序越高==
+
+---
+**Question #: 92**
+**Your customer runs a web service used by e-commerce sites to offer product recommendations to users. The company has begun experimenting with a machine learning model on Google Cloud Platform to improve the quality of results.  What should the customer do to improve their model's results over time?  **
+
+- **A. Export Cloud Machine Learning Engine performance metrics from Stackdriver to BigQuery, to be used to analyze the efficiency of the model.**
+- **B. Build a roadmap to move the machine learning model training from Cloud GPUs to Cloud TPUs, which offer better results.**
+- **C. Monitor Compute Engine announcements for availability of newer CPU architectures, and deploy the model to them as soon as they are available for additional performance.**
+- **D. Save a history of recommendations and results of the recommendations in BigQuery, to be used as training data.**
+
+#### *您的客戶運行一個網路服務，供電子商務網站用於向使用者提供產品推薦。 該公司已開始在 Google Cloud Platform 上試驗機器學習模型，以提高結果的質量。客戶應該怎麼做才能隨著時間的推移改善模型的結果？*
+
+- #### *A. 將 Cloud Machine Learning Engine 性能指標從 Stackdriver 導出到 BigQuery，用於分析模型的效率。*  
+- #### *B. 制定路線圖，將機器學習模型訓練從 Cloud GPU 轉移到 Cloud TPU，這將提供更好的結果。*
+- #### *C. 監控 Compute Engine 公告中是否有更新的 CPU 架構，並在它們可用後立即將模型部署到它們以提高性能。* 
+- #### *D. 將推薦歷史和推薦結果保存在 BigQuery 中，用於作為訓練數據*
+
+> [!NOTE]- Answer
+> **D. Save a history of recommendations and results of the recommendations in BigQuery, to be used as training data.**
+> 
+> # Notes
+> [价格  |  Cloud TPU  |  Google Cloud](https://cloud.google.com/tpu/pricing?hl=zh-cn#estimate-cost)
+> 分析模型的效率、Cloud TPU、更新CPU 架構 這些都是提高速度和優化性能，而不是模型結果質量
+> Cloud TPU（Tensor Processing Unit）是 Google 專為機器學習工作負載設計的客製化機器學習加速器
+> [[assets/PCA/1d946d376626b6952258a3a3df36ef2c_MD5.jpeg|Open: PCA-image-20240805151338306.png]]
+> ![assets/PCA/1d946d376626b6952258a3a3df36ef2c_MD5.jpeg](/img/user/assets/PCA/1d946d376626b6952258a3a3df36ef2c_MD5.jpeg)
+
+---
+**Question #: 93**
+**A development team at your company has created a dockerized HTTPS web application. You need to deploy the application on Google Kubernetes Engine (GKE) and make sure that the application scales automatically.  How should you deploy to GKE?  **
+
+- **A. Use the Horizontal Pod Autoscaler and enable cluster autoscaling. Use an Ingress resource to load-balance the HTTPS traffic.**
+- **B. Use the Horizontal Pod Autoscaler and enable cluster autoscaling on the Kubernetes cluster. Use a Service resource of type LoadBalancer to load-balance the HTTPS traffic.**
+- **C. Enable autoscaling on the Compute Engine instance group. Use an Ingress resource to load-balance the HTTPS traffic.**
+- **D. Enable autoscaling on the Compute Engine instance group. Use a Service resource of type LoadBalancer to load-balance the HTTPS traffic.**
+
+#### *您公司的開發團隊創建了一個 Docker 化的 HTTPS 網路應用程式。 您需要將應用程式部署在 Google Kubernetes Engine (GKE) 上，並確保應用程式自動擴展。 您應該如何部署到 GKE？*
+
+- #### *A. 使用 Horizontal Pod Autoscaler 並啟用叢集自動擴展。 使用 Ingress 資源來負載平衡 HTTPS 流量。*  
+- #### *B. 使用 Horizontal Pod Autoscaler 並在 Kubernetes 叢集上啟用叢集自動擴展。 使用類型為 LoadBalancer 的 Service 資源來負載平衡 HTTPS 流量。*
+- #### *C. 在 Compute Engine 執行個體群組上啟用自動擴展。 使用 Ingress 資源來負載平衡 HTTPS 流量*。  
+- #### *D. 在 Compute Engine 執行個體群組上啟用自動擴展。 使用類型為 LoadBalancer 的 Service 資源來負載平衡 HTTPS 流量。*
+
+> [!NOTE]- Answer
+> **A. Use the Horizontal Pod Autoscaler and enable cluster autoscaling. Use an Ingress resource to load-balance the HTTPS traffic.**
+> 
+> # Notes
+> [自动扩缩集群  |  Google Kubernetes Engine (GKE)  |  Google Cloud](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler?hl=zh-cn)
+> [使用 Ingress 设置外部应用负载均衡器  |  Kubernetes Engine  |  Google Cloud](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer?hl=zh-cn)
+> 使用 LoadBalancer 類型的 Service 資源會為每個服務創建一個外部負載平衡器，這可能會增加成本和複雜性。 Ingress 資源更適合用於管理多個服務的 HTTPS 流量。因為 Compute Engine 執行個體群組的自動擴展，這不適用於 GKE
+
+---
+**Question #: 94**
+**You need to design a solution for global load balancing based on the URL path being requested. You need to ensure operations reliability and end-to-end in- transit encryption based on Google best practices.  What should you do?**
+
+- **A. Create a cross-region load balancer with URL Maps.**
+- **B. Create an HTTPS load balancer with URL Maps.**
+- **C. Create appropriate instance groups and instances. Configure SSL proxy load balancing.**
+- **D. Create a global forwarding rule. Configure SSL proxy load balancing.**
+
+#### *您需要根據所請求的 URL 路徑設計全球負載平衡的解決方案。您需要根據 Google 最佳實務確保操作可靠性和端到端傳輸中加密。  您應該怎麼做？*
+
+- #### *A. 使用 URL 映射創建跨區域負載平衡器。*
+- #### *B. 使用 URL 映射創建 HTTPS 負載平衡器。*
+- #### *C. 創建適當的執行個體群組和執行個體。 配置 SSL 代理負載平衡。*
+- #### *D. 創建全球轉發規則。 配置 SSL 代理負載平衡。*
+
+> [!NOTE]- Answer
+> **B. Create an HTTPS load balancer with URL Maps.**
+> 
+> # Notes
+> [使用网址映射  |  Load Balancing  |  Google Cloud](https://cloud.google.com/load-balancing/docs/https/url-map)
+> [[assets/PCA/84bf15f700abf04436a99064c877f8e3_MD5.jpeg|Open: PCA-image-20240805161505237.png]]
+![assets/PCA/84bf15f700abf04436a99064c877f8e3_MD5.jpeg](/img/user/assets/PCA/84bf15f700abf04436a99064c877f8e3_MD5.jpeg)
+
+---
+**Question #: 95**
+**You have an application that makes HTTP requests to Cloud Storage. Occasionally the requests fail with HTTP status codes of 5xx and 429.  How should you handle these types of errors?**  
+
+- **A. Use gRPC instead of HTTP for better performance.**
+- **B. Implement retry logic using a truncated exponential backoff strategy.**
+- **C. Make sure the Cloud Storage bucket is multi-regional for geo-redundancy.**
+- **D. Monitor https://status.cloud.google.com/feed.atom and only make requests if Cloud Storage is not reporting an incident.**
+
+#### *您有一個應用程式會向 Cloud Storage 發出 HTTP 請求。 有時請求會失敗，並顯示 5xx 和 429 的 HTTP 狀態碼。  您應該如何處理這些類型的錯誤？*
+
+- #### *A. 使用 gRPC 代替 HTTP 以獲得更好的性能。*  
+- #### *B. 使用截斷的指數退避策略實現重試邏輯。*  
+- #### *C. 確保 Cloud Storage 儲存貯體是多區域的，以實現地理冗餘。*  
+- #### *D. 監控 [https://status.cloud.google.com/feed.atom，並且僅在](https://status.cloud.google.com/feed.atom%EF%BC%8C%E4%B8%A6%E4%B8%94%E5%83%85%E5%9C%A8) Cloud Storage 未報告事件時才發出請求。*
+
+> [!NOTE]- Answer
+> **B. Implement retry logic using a truncated exponential backoff strategy.**
+> 
+> # Notes
+> [HTTP status and error codes for JSON  |  Cloud Storage  |  Google Cloud](https://cloud.google.com/storage/docs/json_api/v1/status-codes)
+> [Retry — google-api-core documentation](https://googleapis.dev/python/google-api-core/latest/retry.html)
+> 5xx 錯誤：表示伺服器端錯誤，通常是暫時的。
+> 429 錯誤：表示請求過多，通常是由於請求速率過高造成的。
+> 
+> 截斷的指數退避策略：一種標準的重試機制，可以有效地處理這些類型的錯誤
+> - 指數退避：每次重試之間的延遲時間會呈指數增長，避免過度請求伺服器。
+> - 截斷：設定最大重試次數和最大延遲時間，避免無限期重試。
+
+---
